@@ -2,7 +2,7 @@ export const Profile = ({user}) => {
   return (
     <div>
       <div>
-        <img src={user.avatar} alt='Profile photo'/>
+        <img src={user.avatar} alt='Avatar'/>
         <p>{user.username}</p>
         <p>@{user.tag}</p>
         <p>{user.location}</p>
