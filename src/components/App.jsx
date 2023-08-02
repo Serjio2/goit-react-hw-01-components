@@ -1,7 +1,13 @@
+import user from "../user.json";
+import data from "../data.json";
+import { Profile } from "./Profile/Profile";
+import { Statistics } from "./Statistics/Statistics";
+
 export const App = () => {
   return (
-    <div>
-      React homework template
-    </div>
+    <>
+      <Profile user={user}/>
+      <Statistics stats={data}/>
+    </>
   );
 };
