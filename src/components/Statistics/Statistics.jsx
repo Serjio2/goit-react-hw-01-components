@@ -1,5 +1,5 @@
-export const Statistics = ({ title = 'Upload stats', stats }) => {
-  return (
+export const Statistics = ({ title, stats }) => {
+  return  (
     <div>
     <h2>{title}</h2>
     <ul>

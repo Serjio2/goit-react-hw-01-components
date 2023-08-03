@@ -1,12 +1,14 @@
+import { Container, UserCard } from "./Profile.styled";
+
 export const Profile = ({user}) => {
   return (
-    <div>
-      <div>
+    <Container>
+      <UserCard>
         <img src={user.avatar} alt='Avatar'/>
         <p>{user.username}</p>
         <p>@{user.tag}</p>
         <p>{user.location}</p>
-      </div>
+      </UserCard>
 
       <ul>
         <li>
@@ -22,7 +24,7 @@ export const Profile = ({user}) => {
           <span> {user.stats.likes}</span>
         </li>
       </ul>
-    </div>
+    </Container>
     
   );
 };
