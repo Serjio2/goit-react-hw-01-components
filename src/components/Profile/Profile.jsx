@@ -1,8 +1,8 @@
-import { Container, UserCard } from "./Profile.styled";
+import { List, LustItem, UserCard } from "./Profile.styled";
 
 export const Profile = ({user}) => {
   return (
-    <Container>
+    <>
       <UserCard>
         <img src={user.avatar} alt='Avatar'/>
         <p>{user.username}</p>
@@ -10,21 +10,21 @@ export const Profile = ({user}) => {
         <p>{user.location}</p>
       </UserCard>
 
-      <ul>
-        <li>
+      <List>
+        <LustItem>
           <span>Followers</span>
           <span> {user.stats.followers}</span>
-        </li>
-        <li>
+        </LustItem>
+        <LustItem>
           <span>Views</span>
           <span> {user.stats.views}</span>
-        </li>
-        <li>
+        </LustItem>
+        <LustItem>
           <span>Likes</span>
           <span> {user.stats.likes}</span>
-        </li>
-      </ul>
-    </Container>
+        </LustItem>
+      </List>
+    </>
     
   );
 };

@@ -1,15 +1,17 @@
+import { List, ListItem, Stats } from "./Statistics.styled";
+
 export const Statistics = ({ title, stats }) => {
   return  (
-    <div>
+    <Stats>
     <h2>{title}</h2>
-    <ul>
+    <List>
       {stats.map(stat => (
-        <li key={stat.id}>
+        <ListItem key={stat.id}>
           <span>{stat.label}</span>
           <span> {stat.percentage}%</span>
-        </li>
+        </ListItem>
       ))}
-    </ul>
-    </div>
+    </List>
+    </Stats>
   );
 };
