@@ -3,7 +3,7 @@ import { List, ListItem, Stats } from "./Statistics.styled";
 export const Statistics = ({ title, stats }) => {
   return  (
     <Stats>
-    <h2>{title}</h2>
+    {title && <h2>{title}</h2>}
     <List>
       {stats.map(stat => (
         <ListItem key={stat.id}>
